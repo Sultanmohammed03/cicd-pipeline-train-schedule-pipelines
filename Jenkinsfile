@@ -4,7 +4,7 @@ pipeline {
     stage ('Build'){
       steps {
         echo 'Runnning build automation'
-        sh './gardelw build --no-daemon'
+        sh './gardlew build --no-daemon'
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
